@@ -54,7 +54,7 @@ The microphone works on `localhost`. **Phones need HTTPS** (see Field test below
 
 ## Field test (do this next, ~1 hour)
 
-**Host it over HTTPS** (needed for the mic on phones). The quickest way is to drag the `spike` folder onto Netlify Drop (app.netlify.com/drop). GitHub Pages works too.
+**Live page (HTTPS, works on phones):** https://blueskiez-dev.github.io/dial-tone-spike/. Every push to `main` redeploys it.
 
 On both phones: open the page → **Enable audio + mic** → allow the microphone.
 
