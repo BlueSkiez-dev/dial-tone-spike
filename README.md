@@ -18,7 +18,17 @@ This folder is *not* the product repo. Keep the findings and leave the code here
 Run locally: `npx http-server@14.1.1 dial-tone/spike -p 5173`, then open http://localhost:5173.
 The microphone works on `localhost`. **Phones need HTTPS** (see Field test below).
 
-## Results so far (simulated, Nov 13)
+## Field test results (real phones, Nov 13)
+
+| Channel | Result | Notes |
+|---|---|---|
+| Room (speaker → mic) | ✅ Works | Tested repeatedly |
+| Mobile phone call | ✅ Works | Tested repeatedly. Exact protocol mix and call type (VoLTE / 3G) not logged yet |
+| Voice note | ✅ Works | Tested repeatedly |
+| Internet voice call | ⏸ Not tested | No access. Low priority: if internet calls work, the internet is up and Dial Tone isn't needed |
+| Walkie-talkie | ⏸ Not tested | No radios. Simulation says dual-tone should pass, but it's unverified on hardware |
+
+## Simulated results (Nov 13)
 
 **Simulated channels:** 10 random 24-character messages per cell (Node); the browser gave the same result at 5 per cell.
 
